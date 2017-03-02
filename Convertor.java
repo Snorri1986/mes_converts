@@ -1,4 +1,4 @@
-/* Main class */
+/* Main classs */
 import java.util.Scanner;
 import javax.swing.JFrame;
 import java.awt.Dimension;
