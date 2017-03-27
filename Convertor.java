@@ -1,7 +1,6 @@
 /* Main class */
 import java.util.Scanner;
 import javax.swing.JFrame;
-import java.awt.Dimension;
 import java.awt.Toolkit;
 
 public class Convertor {
@@ -12,9 +11,9 @@ public class Convertor {
         JFrame frame = new JFrame("Converter");
         frame.setVisible(true);
         frame.setSize(500,400); // optimal size
-        // on the center of any screen
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setLocation(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 27.03.2017
+        frame.setLocationRelativeTo(null);  // always on the center of screen
+        frame.setResizable(false);
         WeatherTemp wt = new WeatherTemp();
         System.out.print("Please enter your grade value : ");
         Scanner sc1 = new Scanner(System.in);
