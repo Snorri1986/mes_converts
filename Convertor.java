@@ -3,6 +3,7 @@ import java.awt.*;
 import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JButton;
 
 public class Convertor {
     public static void main(String[] args) {
@@ -21,6 +22,19 @@ public class Convertor {
         JPanel j_temperaute = new JPanel();
         j_temperaute.setPreferredSize(new Dimension(500,200));
         frame.getContentPane().add(j_temperaute);
+
+        // Buttons
+        JButton cf = new JButton();
+        cf.setText("C->F");
+        JButton fc = new JButton();
+        fc.setText("F->C");
+        JButton kc = new JButton();
+        kc.setText("K->C");          // Kelvine to Celcius
+
+        // add buttons to JPanel
+        j_temperaute.add(cf);
+        j_temperaute.add(fc);
+        j_temperaute.add(kc);
 
         WeatherTemp wt = new WeatherTemp();
         System.out.print("Please enter your grade value : ");
