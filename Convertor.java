@@ -4,6 +4,7 @@ import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 
 public class Convertor {
     public static void main(String[] args) {
@@ -17,6 +18,10 @@ public class Convertor {
         frame.setLocationRelativeTo(null);  // always on the center of screen
         frame.setResizable(false);
         frame.setBackground(Color.WHITE);
+
+        // Add JLabel
+        JLabel temp_leb = new JLabel("Temperature convertion");
+
 
         // Add JPanel
         JPanel j_temperaute = new JPanel();
@@ -35,6 +40,7 @@ public class Convertor {
         j_temperaute.add(cf);
         j_temperaute.add(fc);
         j_temperaute.add(kc);
+        j_temperaute.add(temp_leb);
 
         WeatherTemp wt = new WeatherTemp();
         System.out.print("Please enter your grade value : ");
