@@ -1,10 +1,13 @@
 /* Main class */
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+
 
 
 // test commit
@@ -44,21 +47,26 @@ public class Convertor {
         j_temperaute.add(kc);
         j_temperaute.add(temp_leb);
 
-        WeatherTemp wt = new WeatherTemp();
-        System.out.print("Please enter your grade value : ");
-        Scanner sc1 = new Scanner(System.in);
-        grade = sc1.nextInt();
-        System.out.print("Please enter grade system(c-celcius,f-faringeith) : ");
-        Scanner sc2 = new Scanner(System.in);
-        grade_system = sc2.next().charAt(0);
-        switch (grade_system) {
-            case 'c':
-                wt.showCelcius(grade);
-                break;
-            case 'f':
-                wt.showFaringeith(grade);
-                break;
-        }
+
+        // Button listeners
+        cf.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Forms.celc_to_far();
+            }
+        } );
+
+        fc.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Forms.far_to_celc();
+            }
+        } );
+
+        kc.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Forms.kelv_to_celc();
+            }
+        } );
+
     }
 
 }
