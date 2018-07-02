@@ -3,7 +3,7 @@ import javax.swing.*;
 //import java.awt.event.ActionListener;
 
 /**
- * Created by Snorri on 27.09.2017.
+ * Created by Denys Shabelnyk on 27.09.2017.
  */
 public class Forms {
     public static void celc_to_far()
