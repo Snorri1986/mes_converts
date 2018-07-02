@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 //import java.awt.event.ActionEvent;
 //import java.awt.event.ActionListener;
 
@@ -6,6 +8,11 @@ import javax.swing.*;
  * Created by Denys Shabelnyk on 27.09.2017.
  */
 public class Forms {
+
+    //WeatherTemp wt = new WeatherTemp(); // global object
+    int val = 0;
+
+
     public static void celc_to_far()
     {
         //JFrame
@@ -37,11 +44,30 @@ public class Forms {
         sl_celc_to_far.putConstraint(SpringLayout.SOUTH, btnCalc_cf, -10, SpringLayout.SOUTH, fr_celc_to_far.getContentPane());
         fr_celc_to_far.getContentPane().add(btnCalc_cf);
 
+        // 02.07.2018
+        btnCalc_cf.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                WeatherTemp wt = new WeatherTemp();
+                wt.showFaringeith(Integer.parseInt(tf_celc_to_far.getText()));
+            }
+        });
+        //
+
 
         JButton btnCancel_kc = new JButton("Clear");
         sl_celc_to_far.putConstraint(SpringLayout.NORTH, btnCancel_kc, 0, SpringLayout.NORTH, btnCalc_cf);
         //sl_kelv_to_celc.putConstraint(SpringLayout.WEST, btnCancel_kc, 0, SpringLayout.WEST);
         fr_celc_to_far.getContentPane().add(btnCancel_kc);
+
+        // 02.07.2018
+        btnCancel_kc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tf_celc_to_far.setText(" ");
+            }
+        });
+        //
 
     }
 
@@ -75,11 +101,30 @@ public class Forms {
         sl_far_to_celc.putConstraint(SpringLayout.SOUTH, btnCalc_fc, -10, SpringLayout.SOUTH, fr_far_to_celc.getContentPane());
         fr_far_to_celc.getContentPane().add(btnCalc_fc);
 
+        // 02.07.2018
+        btnCalc_fc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                WeatherTemp wt = new WeatherTemp();
+                wt.showCelcius(Integer.parseInt(tf_far_to_celc.getText()));
+            }
+        });
+        //
+
 
         JButton btnCancel_kc = new JButton("Clear");
         sl_far_to_celc.putConstraint(SpringLayout.NORTH, btnCancel_kc, 0, SpringLayout.NORTH, btnCalc_fc);
         //sl_kelv_to_celc.putConstraint(SpringLayout.WEST, btnCancel_kc, 0, SpringLayout.WEST);
         fr_far_to_celc.getContentPane().add(btnCancel_kc);
+
+        // 02.07.2018
+        btnCancel_kc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tf_far_to_celc.setText(" ");
+            }
+        });
+        //
 
     }
 

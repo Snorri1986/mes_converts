@@ -18,14 +18,14 @@ public class Convertor {
         // JFrame preferences
         JFrame frame = new JFrame("Converter");
         frame.setVisible(true);
-        frame.setSize(500, 600); // optimal size
+        frame.setSize(600, 500); // optimal size
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 27.03.2017
         frame.setLocationRelativeTo(null);  // always on the center of screen
         frame.setResizable(false);
         frame.setBackground(Color.WHITE);
 
         // Add JLabel
-        JLabel temp_leb = new JLabel("Temperature convertion");
+        // JLabel temp_leb = new JLabel("Temperature convertion");
 
 
         // Add JPanel
@@ -35,17 +35,20 @@ public class Convertor {
 
         // Buttons
         JButton cf = new JButton();
-        cf.setText("C->F");
+        cf.setPreferredSize(new Dimension(150,50)); // 02.07.2018
+        cf.setText("Celcius->Fahrenheit");
         JButton fc = new JButton();
-        fc.setText("F->C");
+        fc.setPreferredSize(new Dimension(150,50)); // 02.07.2018
+        fc.setText("Fahrenheit->Celcius");
         JButton kc = new JButton();
-        kc.setText("K->C");          // Kelvine to Celcius
+        kc.setPreferredSize(new Dimension(130,50)); // 02.07.2018
+        kc.setText("Kelvine->Celcius");          // Kelvine to Celcius
 
         // add buttons to JPanel
         j_temperaute.add(cf);
         j_temperaute.add(fc);
         j_temperaute.add(kc);
-        j_temperaute.add(temp_leb);
+        //j_temperaute.add(temp_leb);
 
 
         // Button listeners
