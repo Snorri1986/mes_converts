@@ -1,18 +1,13 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-//import java.awt.event.ActionEvent;
-//import java.awt.event.ActionListener;
 
 /**
  * Created by Denys Shabelnyk on 27.09.2017.
  */
+
 public class Forms {
-
-    //WeatherTemp wt = new WeatherTemp(); // global object
     int val = 0;
-
-
     public static void celc_to_far()
     {
         //JFrame
@@ -47,12 +42,23 @@ public class Forms {
         // 02.07.2018
         btnCalc_cf.addActionListener(new ActionListener() {
             @Override
+            // 04.07.2018
             public void actionPerformed(ActionEvent e) {
+                double res = 0.0;
                 WeatherTemp wt = new WeatherTemp();
-                wt.showFaringeith(Integer.parseInt(tf_celc_to_far.getText()));
+                JFrame res_window = new JFrame("Celsius_to_Fahrenheit");
+                res_window.setLocationRelativeTo(null);
+                res = wt.showFaringeith(Integer.parseInt(tf_celc_to_far.getText()));
+                String lab_res = String.valueOf(res) + " F"; // convert double to string
+                JLabel res_test = new JLabel(lab_res);
+                res_window.add(res_test);
+                res_window.pack();
+                res_window.setVisible(true);
+                tf_celc_to_far.setText(" ");
             }
+            //
         });
-        //
+
 
 
         JButton btnCancel_kc = new JButton("Clear");
@@ -105,8 +111,18 @@ public class Forms {
         btnCalc_fc.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // 04.07.2018
+                double res = 0.0;
                 WeatherTemp wt = new WeatherTemp();
-                wt.showCelcius(Integer.parseInt(tf_far_to_celc.getText()));
+                JFrame res_window = new JFrame("Fahrenheit_to_Celcius");
+                res_window.setLocationRelativeTo(null);
+                res = Math.round(wt.showCelcius(Integer.parseInt(tf_far_to_celc.getText())));
+                String lab_res = String.valueOf(res) + " C"; // convert double to string
+                JLabel res_test = new JLabel(lab_res);
+                res_window.add(res_test);
+                res_window.pack();
+                res_window.setVisible(true);
+                tf_far_to_celc.setText(" ");
             }
         });
         //
@@ -158,10 +174,37 @@ public class Forms {
         sl_kelv_to_celc.putConstraint(SpringLayout.SOUTH, btnCalc_kc, -10, SpringLayout.SOUTH, fr_kelv_to_celc.getContentPane());
         fr_kelv_to_celc.getContentPane().add(btnCalc_kc);
 
+        // 04.07.2018
+        btnCalc_kc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double res = 0.0;
+                WeatherTemp wt = new WeatherTemp();
+                JFrame res_window = new JFrame("Kelvin_to_Celcius");
+                res_window.setLocationRelativeTo(null);
+                res = wt.showCelciusFromKelvin(Integer.parseInt(tf_kelv_to_celc.getText()));
+                String lab_res = String.valueOf(res) + " C"; // convert double to string
+                JLabel res_test = new JLabel(lab_res);
+                res_window.add(res_test);
+                res_window.pack();
+                res_window.setVisible(true);
+                tf_kelv_to_celc.setText(" ");
+            }
+        });
+        //
+
 
         JButton btnCancel_kc = new JButton("Clear");
         sl_kelv_to_celc.putConstraint(SpringLayout.NORTH, btnCancel_kc, 0, SpringLayout.NORTH, btnCalc_kc);
-        //sl_kelv_to_celc.putConstraint(SpringLayout.WEST, btnCancel_kc, 0, SpringLayout.WEST);
         fr_kelv_to_celc.getContentPane().add(btnCancel_kc);
+
+        // 04.07.2018
+        btnCancel_kc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tf_kelv_to_celc.setText(" ");
+            }
+        });
+        //
     }
 }
