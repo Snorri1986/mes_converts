@@ -7,6 +7,9 @@ import java.awt.event.ActionListener;
  */
 
 public class Forms {
+
+    // Add new Form and button_listeners to AmericalMesserments objects
+
     int val = 0;
     public static void celc_to_far()
     {
@@ -48,7 +51,7 @@ public class Forms {
                 WeatherTemp wt = new WeatherTemp();
                 JFrame res_window = new JFrame("Celsius_to_Fahrenheit");
                 res_window.setLocationRelativeTo(null);
-                res = wt.showFaringeith(Integer.parseInt(tf_celc_to_far.getText()));
+                res = wt.showFaringeith(Integer.parseInt(tf_celc_to_far.getText().trim()));
                 String lab_res = String.valueOf(res) + " F"; // convert double to string
                 JLabel res_test = new JLabel(lab_res);
                 res_window.add(res_test);
@@ -116,7 +119,7 @@ public class Forms {
                 WeatherTemp wt = new WeatherTemp();
                 JFrame res_window = new JFrame("Fahrenheit_to_Celcius");
                 res_window.setLocationRelativeTo(null);
-                res = Math.round(wt.showCelcius(Integer.parseInt(tf_far_to_celc.getText())));
+                res = Math.round(wt.showCelcius(Integer.parseInt(tf_far_to_celc.getText().trim())));
                 String lab_res = String.valueOf(res) + " C"; // convert double to string
                 JLabel res_test = new JLabel(lab_res);
                 res_window.add(res_test);
@@ -182,7 +185,7 @@ public class Forms {
                 WeatherTemp wt = new WeatherTemp();
                 JFrame res_window = new JFrame("Kelvin_to_Celcius");
                 res_window.setLocationRelativeTo(null);
-                res = wt.showCelciusFromKelvin(Integer.parseInt(tf_kelv_to_celc.getText()));
+                res = wt.showCelciusFromKelvin(Integer.parseInt(tf_kelv_to_celc.getText().trim()));
                 String lab_res = String.valueOf(res) + " C"; // convert double to string
                 JLabel res_test = new JLabel(lab_res);
                 res_window.add(res_test);
