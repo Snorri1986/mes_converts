@@ -48,7 +48,7 @@ public class Convertor {
         //land_mile->km
         JButton lm_km = new JButton();
         lm_km.setPreferredSize(new Dimension(170,50));
-        lm_km.setText("Land_mile->Kilometer");
+        lm_km.setText("LandMile->Kilometer");
 
         //km->land_mile
         JButton km_lm = new JButton();
@@ -128,23 +128,103 @@ public class Convertor {
         // Button listeners
         cf.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Forms.celc_to_far();
+                /*Forms.celc_to_far();*/
+                FormShower.showForm("Celc<->Fahr","C->F",new WeatherTemp(),null);
             }
         } );
 
         fc.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Forms.far_to_celc();
+                /*Forms.far_to_celc();*/
+                FormShower.showForm("Fahr<->Celc","F->C",new WeatherTemp(),null);
             }
         } );
 
         kc.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Forms.kelv_to_celc();
+                /*Forms.kelv_to_celc();*/
+                FormShower.showForm("Kelv<->Celc","K->C",new WeatherTemp(),null);
             }
         } );
 
         // Add new listeners for AmericanMessurments buttons
+
+        // test code
+        lm_km.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("LandMile->Kilometer","LandMile->KM",null,new AmericanMesserments());
+            }
+        } );
+
+
+        km_lm.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Kilometer->LandMile","KM->LandMile",null,new AmericanMesserments());
+            }
+        } );
+
+        smile_km.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("SeaMile->Kilometer","SeaM->KM",null,new AmericanMesserments());
+            }
+        } );
+
+        km_smile.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Kilometer->SeaMile","KM->SeaM",null,new AmericanMesserments());
+            }
+        } );
+
+        inch_sm.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Inch->Santimeter","inch->sm",null,new AmericanMesserments());
+            }
+        } );
+
+        sm_inch.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Santimeter->Inch","sm->inch",null,new AmericanMesserments());
+            }
+        } );
+
+        ft_meter.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Fut->Meter","ft->meter",null,new AmericanMesserments());
+            }
+        } );
+
+        meter_ft.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Meter->Fut","meter->ft",null,new AmericanMesserments());
+            }
+        } );
+
+        gal_litr.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Gallon->Litr","gall->litr",null,new AmericanMesserments());
+            }
+        } );
+
+        litr_gal.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Litr->Gallon","litr->gall",null,new AmericanMesserments());
+            }
+        } );
+
+        yard_meter.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Yard->Meter","yard->meter",null,new AmericanMesserments());
+            }
+        } );
+
+        meter_yard.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                FormShower.showForm("Meter->Yard","meter->yard",null,new AmericanMesserments());
+            }
+        } );
+
+
+        //
 
     }
 

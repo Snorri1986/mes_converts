@@ -1,14 +1,14 @@
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+//import javax.swing.*;
+//import java.awt.event.ActionEvent;
+//import java.awt.event.ActionListener;
 
 /**
  * Created by Denys Shabelnyk on 27.09.2017.
  */
 
-public class Forms {
+/* Remove candidate */
 
-    // Add new Form and button_listeners to AmericalMesserments objects
+/*public class Forms {
 
     int val = 0;
     public static void celc_to_far()
@@ -210,4 +210,4 @@ public class Forms {
         });
         //
     }
-}
+}*/

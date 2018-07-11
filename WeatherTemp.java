@@ -8,13 +8,13 @@ public class WeatherTemp {
     protected double kelvin = 0.0; // 04.07.2018
     // in Celcius system
     protected double showCelcius(int grad_val) {   // test 04.07.2018
-        String answer = new String("Grade in Celcius ");
+        //String answer = new String("Grade in Celcius ");
         celcius = (grad_val - conv_val) * dim_val_f_to_c;
         return celcius;
     }
      // in Faringeuth system
     protected double showFaringeith(int grad_val) {  // test 04.07.2018
-        String answer = new String("Grade in Faringeith ");
+        //String answer = new String("Grade in Faringeith ");
         faringeith = grad_val*dim_val_c_to_f + conv_val;
         return faringeith;
     }
