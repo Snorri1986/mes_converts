@@ -105,6 +105,25 @@ public class Convertor {
         meter_yard.setPreferredSize(new Dimension(170,50));
         meter_yard.setText("Meter->Yard");
 
+        // test code
+        JButton fSS = new JButton();
+        fSS.setPreferredSize(new Dimension(170,50));
+        fSS.setText("FirstSpaceSpeed");
+
+
+        JButton sSS = new JButton();
+        sSS.setPreferredSize(new Dimension(170,50));
+        sSS.setText("SecondSpaceSpeed");
+
+
+        JButton tSS = new JButton();
+        tSS.setPreferredSize(new Dimension(170,50));
+        tSS.setText("ThirdSpaceSpeed");
+
+        JButton astUnit = new JButton();
+        astUnit.setPreferredSize(new Dimension(170,50));
+        astUnit.setText("AstroUnit");
+
 
         // add buttons to JPanel
         j_temperaute.add(cf);
@@ -122,6 +141,10 @@ public class Convertor {
         j_temperaute.add(litr_gal);
         j_temperaute.add(yard_meter);
         j_temperaute.add(meter_yard);
+        j_temperaute.add(fSS);
+        j_temperaute.add(sSS);
+        j_temperaute.add(tSS);
+        j_temperaute.add(astUnit);
 
 
 
@@ -223,8 +246,30 @@ public class Convertor {
             }
         } );
 
+        fSS.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                AstronomyMesserments.showFirstSpaceSpeed();
+            }
+        } );
 
-        //
+        sSS.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                AstronomyMesserments.showSecondSpaceSpeed();
+            }
+        } );
+
+        tSS.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                AstronomyMesserments.showThirdSpaceSpeed();
+            }
+        } );
+
+
+       astUnit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                AstronomyMesserments.showAstroUnit();
+            }
+        } );
 
     }
 
