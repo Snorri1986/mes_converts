@@ -59,129 +59,182 @@ public class FormShower {
                 res_window.setVisible(true);
                 tf_celc_to_far.setText(" ");*/
                 //System.out.println("HelloWorld");
+
+                //shared values
+                String lab_res;
+                JLabel res_test;
+
                 if (am != null) {
                     double res = 0.0;
                     JFrame res_window = new JFrame(title);
                     res_window.setLocationRelativeTo(null);
                     switch(title) {
                         case "LandMile->Kilometer" :
-                            res = am.landMiletoKm(Integer.parseInt(tf.getText().trim()));
-                            String lab_res = String.valueOf(res) + " km"; // convert double to string
-                            JLabel res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.landMiletoKm(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " km"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            }catch (NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Kilometer->LandMile" :
-                            res = am.kmToLandMile(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " miles"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.kmToLandMile(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " miles"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch (NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "SeaMile->Kilometer" :
-                            res = am.seaMilestoKm(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " km"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.seaMilestoKm(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " km"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch (NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Kilometer->SeaMile" :
-                            res = am.kmToSeaMiles(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " miles"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.kmToSeaMiles(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " miles"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Inch->Santimeter" :
-                            res = am.inchToSm(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " sm"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.inchToSm(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " sm"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch (NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Santimeter->Inch" :
-                            res = am.smToInch(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " inch"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.smToInch(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " inch"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Fut->Meter" :
-                            res = am.ftToMeter(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " meters"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.ftToMeter(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " meters"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Meter->Fut" :
-                            res = am.meterToFt(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " futs"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.meterToFt(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " futs"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Gallon->Litr" :
-                            res = am.gallToLitr(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " litrs"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.gallToLitr(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " litrs"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch (NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Litr->Gallon" :
-                            res = am.litrToGall(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " gallons"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.litrToGall(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " gallons"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Yard->Meter" :
-                            res = am.yardToMeter(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " meters"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.yardToMeter(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " meters"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch (NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Meter->Yard" :
-                            res = am.meterToYard(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " yards"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = am.meterToYard(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " yards"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch (NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
                     }
                 }
@@ -191,36 +244,46 @@ public class FormShower {
                     res_window.setLocationRelativeTo(null);
                     switch(title) {
                         case "Celc<->Fahr" :
-                            res = wt.showFaringeith(Integer.parseInt(tf.getText().trim()));
-                            String lab_res = String.valueOf(res) + " F"; // convert double to string
-                            JLabel res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = wt.showFaringeith(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " F"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Fahr<->Celc" :
-                            res = wt.showCelcius(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " C"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = wt.showCelcius(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " C"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
 
                         case "Kelv<->Celc" :
-                            res = wt.showCelciusFromKelvin(Integer.parseInt(tf.getText().trim()));
-                            lab_res = String.valueOf(res) + " C"; // convert double to string
-                            res_test = new JLabel(lab_res);
-                            res_window.add(res_test);
-                            res_window.pack();
-                            res_window.setVisible(true);
-                            tf.setText(" ");
+                            try {
+                                res = wt.showCelciusFromKelvin(Integer.parseInt(tf.getText().trim()));
+                                lab_res = String.valueOf(res) + " C"; // convert double to string
+                                res_test = new JLabel(lab_res);
+                                res_window.add(res_test);
+                                res_window.pack();
+                                res_window.setVisible(true);
+                                tf.setText(" ");
+                            } catch(NumberFormatException ex) {
+                                new NumFormException();
+                            }
                             break;
-
-
                     }
 
                 }

@@ -22,6 +22,7 @@ public class AstronomyMesserments {
 
         // JTextField
         JTextField tf_first_speed = new JTextField();
+        tf_first_speed.setEditable(false);
         sl_celc_to_far.putConstraint(SpringLayout.NORTH, tf_first_speed, 26, SpringLayout.NORTH, fr_first_speed.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.WEST, tf_first_speed, 144, SpringLayout.WEST, fr_first_speed.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.EAST, tf_first_speed, -100, SpringLayout.EAST, fr_first_speed.getContentPane());
@@ -63,6 +64,7 @@ public class AstronomyMesserments {
 
         // JTextField
         JTextField tf_second_speed = new JTextField();
+        tf_second_speed.setEditable(false);
         sl_celc_to_far.putConstraint(SpringLayout.NORTH, tf_second_speed, 26, SpringLayout.NORTH, fr_second_speed.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.WEST, tf_second_speed, 150, SpringLayout.WEST, fr_second_speed.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.EAST, tf_second_speed, -1, SpringLayout.EAST, fr_second_speed.getContentPane());
@@ -106,6 +108,7 @@ public class AstronomyMesserments {
 
         // JTextField
         JTextField tf_third_speed = new JTextField();
+        tf_third_speed.setEditable(false);
         sl_celc_to_far.putConstraint(SpringLayout.NORTH, tf_third_speed, 26, SpringLayout.NORTH, th_second_speed.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.WEST, tf_third_speed, 150, SpringLayout.WEST, th_second_speed.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.EAST, tf_third_speed, -1, SpringLayout.EAST, th_second_speed.getContentPane());
@@ -147,6 +150,7 @@ public class AstronomyMesserments {
 
         // JTextField
         JTextField tf_astro_unit = new JTextField();
+        tf_astro_unit.setEditable(false);
         sl_celc_to_far.putConstraint(SpringLayout.NORTH, tf_astro_unit, 26, SpringLayout.NORTH, jf_astro_unit.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.WEST, tf_astro_unit, 150, SpringLayout.WEST, jf_astro_unit.getContentPane());
         sl_celc_to_far.putConstraint(SpringLayout.EAST, tf_astro_unit, -1, SpringLayout.EAST, jf_astro_unit.getContentPane());
