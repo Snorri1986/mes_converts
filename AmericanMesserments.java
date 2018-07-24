@@ -4,11 +4,11 @@
 public class AmericanMesserments {
 
     // Global constants
-    final double land_mile = 1.609; // in km
+    final double land_mile = 1.60934; // in km
     final double sea_mile = 1.852; // in km
     final double inch = 2.54; // in sm
     final double ft = 0.3048; // im meter
-    final double gallon = 3.785; // in litr
+    final double gallon = 3.78541; // in litr
     final double yard = 0.9144; // in meter
 
     //land mile -> km
