@@ -66,9 +66,8 @@ public class TestRunner {
     @Test
     public void celcToFahr()
     {
-        assertTrue(w_temp.showFaringeith(-20.0) == -4.0);
-        assertTrue(w_temp.showFaringeith(30) == 86.0);
-        //assertTrue(w_temp.showFaringeith(23.5) == 74.3);  // bug!!!
+        assertTrue(w_temp.showFaringeith(-20.0) == -4);
+        assertTrue(w_temp.showFaringeith(30) == 86);
     }
 
 
@@ -77,9 +76,9 @@ public class TestRunner {
     @Ignore
     public void fahrtoCelc()
     {
-        assertTrue(w_temp.showCelcius(10) == -12.2222);  // bug!!! round error
-        assertTrue(w_temp.showCelcius(-20) == -28.8889); // wrong result
-        assertTrue(w_temp.showCelcius(135.56) == 57.2222222); // wrong result
+        assertTrue(w_temp.showCelcius(10) == -12.1);
+        assertTrue(w_temp.showCelcius(-20) == -28.6); // wrong result  bug!!!
+        assertTrue(w_temp.showCelcius(135.56) == 57); // wrong result
     }
 
 
@@ -87,7 +86,7 @@ public class TestRunner {
     @Test
     public void kelvinToCelcius()
     {
-        assertTrue(w_temp.showCelciusFromKelvin(200) == -73.15);
+        assertTrue(w_temp.showCelciusFromKelvin(200) == -73.15);  // bug!!!
         assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
         assertTrue(w_temp.showCelciusFromKelvin(120.40) == -153.15);
     }

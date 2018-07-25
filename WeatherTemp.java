@@ -6,6 +6,7 @@ public class WeatherTemp {
     protected double celcius = 0.0;
     protected double faringeith = 0.0;
     protected double kelvin = 0.0; // 04.07.2018
+
     // in Celcius system
     protected double showCelcius(double grad_val) {   // test 04.07.2018
         //String answer = new String("Grade in Celcius ");
@@ -15,7 +16,8 @@ public class WeatherTemp {
      // in Faringeuth system
     protected double showFaringeith(double grad_val) {  // test 04.07.2018
         //String answer = new String("Grade in Faringeith ");
-        faringeith = grad_val*dim_val_c_to_f + conv_val;
+
+        faringeith = grad_val*dim_val_c_to_f + conv_val;  // test code
         return faringeith;
     }
 
