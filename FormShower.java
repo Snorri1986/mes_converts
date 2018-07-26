@@ -14,7 +14,7 @@ public class FormShower {
         WeatherTemp weather = wt;
 
         // Format pattern for decimal values
-        DecimalFormat df = new DecimalFormat("##.#");
+        //DecimalFormat df = new DecimalFormat("##.#");
 
         //JFrame
         JFrame fr = new JFrame(title);
@@ -248,8 +248,10 @@ public class FormShower {
                     switch(title) {
                         case "Celc<->Fahr" :
                             try {
+
+                                DecimalFormat sF = new DecimalFormat("##.#");
                                 res = wt.showFaringeith(Double.parseDouble(tf.getText().trim()));
-                                lab_res = String.valueOf(df.format(res)).replace(",",".") + " F"; // convert double to string
+                                lab_res = String.valueOf(sF.format(res)).replace(",",".") + " F"; // convert double to string
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -262,9 +264,10 @@ public class FormShower {
 
                         case "Fahr<->Celc" :
                             try {
+                                //DecimalFormat sC = new DecimalFormat("##.#");
                                 res = wt.showCelcius(Double.parseDouble(tf.getText().trim()));
-                                //lab_res = String.valueOf(res) + " C"; // convert double to string
-                                lab_res = String.valueOf(df.format(res)).replace(",",".") + " C"; // test
+                                lab_res = String.valueOf(res) + " C"; // convert double to string
+                                //lab_res = String.valueOf(sC.format(res)).replace(",",".") + " C"; // test
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();

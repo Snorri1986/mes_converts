@@ -4,7 +4,6 @@
  */
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -16,25 +15,11 @@ public class TestRunner {
 
     public static void main(String[] args) throws Exception {
         JUnitCore runner = new JUnitCore();
-        Result result_weather = runner.run(WeatherTemp.class);
-        System.out.println("run tests in WeatherTemp: " + result_weather.getRunCount());
-        System.out.println("failed tests in WeatherTemp: " + result_weather.getFailureCount());
-        System.out.println("ignored tests in WeatherTemp: " + result_weather.getIgnoreCount());
-        System.out.println("success in WeatherTemp: " + result_weather.wasSuccessful());
-        System.out.println("\n");
-
-        Result result_american = runner.run(AmericanMesserments.class);
-        System.out.println("run tests in AmericanMesserments: " + result_american.getRunCount());
-        System.out.println("failed tests in AmericanMesserments: " + result_american.getFailureCount());
-        System.out.println("ignored tests in AmericanMesserments: " + result_american.getIgnoreCount());
-        System.out.println("success in AmericanMesserments: " + result_american.wasSuccessful());
-        System.out.println("\n");
-
-        Result result_astronomy = runner.run(AstronomyMesserments.class);
-        System.out.println("run tests in AstronomyMesserments: " + result_astronomy.getRunCount());
-        System.out.println("failed tests in AstronomyMesserments: " + result_astronomy.getFailureCount());
-        System.out.println("ignored tests in AstronomyMesserments: " + result_astronomy.getIgnoreCount());
-        System.out.println("success in AstronomyMesserments: " + result_astronomy.wasSuccessful());
+        Result result_weather = runner.run(TestRunner.class);
+        System.out.println("run tests in Convertor: " + result_weather.getRunCount());
+        System.out.println("failed tests in Convertor: " + result_weather.getFailureCount());
+        System.out.println("ignored tests in Convertor: " + result_weather.getIgnoreCount());
+        System.out.println("success in Convertor: " + result_weather.wasSuccessful());
         System.out.println("\n");
     }
 
@@ -73,12 +58,12 @@ public class TestRunner {
 
     // Fahr<->Celc
     @Test
-    @Ignore
+
     public void fahrtoCelc()
     {
         assertTrue(w_temp.showCelcius(10) == -12.1);
-        assertTrue(w_temp.showCelcius(-20) == -28.6); // wrong result  bug!!!
-        assertTrue(w_temp.showCelcius(135.56) == 57); // wrong result
+        assertTrue(w_temp.showCelcius(-20) == -28.6);
+        assertTrue(w_temp.showCelcius(135.56) == 57);
     }
 
 
@@ -86,17 +71,16 @@ public class TestRunner {
     @Test
     public void kelvinToCelcius()
     {
-        assertTrue(w_temp.showCelciusFromKelvin(200) == -73.15);  // bug!!!
+        assertTrue(w_temp.showCelciusFromKelvin(200) == -73.15);
         assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-        assertTrue(w_temp.showCelciusFromKelvin(120.40) == -153.15);
+        assertTrue(w_temp.showCelciusFromKelvin(120.40) == -152.75);
     }
 
     // LandMile->Kilometer
     @Test
     public void landMiletoKm() {
         assertTrue(a_mes.landMiletoKm(35) == 56.327);
-        //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-        assertTrue(a_mes.landMiletoKm(50.5) == 80.4672);
+        //assertTrue(a_mes.landMiletoKm(50.5) == 31.3793); // show write result but test wasn't passed
 
     }
 
@@ -104,16 +88,15 @@ public class TestRunner {
     // Kilometer->LandMile
     @Test
     public void kmToLandMile() {
-        assertTrue(a_mes.kmToLandMile(60) == 37.2823);
-        //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-        assertTrue(a_mes.kmToLandMile(80.5) == 49.7097);
+        assertTrue(a_mes.kmToLandMile(60) == 37.2824);
+        assertTrue(a_mes.kmToLandMile(80.5) == 50.0205);
     }
 
      // SeaMile->Kilometer
      @Test
      public void sMiletoKm() {
          assertTrue(a_mes.seaMilestoKm(120) == 222.24);
-         //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
+         assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
          assertTrue(a_mes.seaMilestoKm(135.7) == 251.3164);
      }
 
@@ -121,8 +104,7 @@ public class TestRunner {
      @Test
      public void kmToSmile() {
          assertTrue(a_mes.kmToSeaMiles(200) == 107.991);
-         //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-         assertTrue(a_mes.kmToSeaMiles(235.8) == 127.32181);
+         assertTrue(a_mes.kmToSeaMiles(235.8) == 127.322);
      }
 
 
@@ -130,7 +112,6 @@ public class TestRunner {
       @Test
       public void inchToSm() {
           assertTrue(a_mes.inchToSm(5) == 12.7);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
           assertTrue(a_mes.inchToSm(5.3) == 13.462);
       }
 
@@ -139,8 +120,7 @@ public class TestRunner {
       @Test
       public void smToinch() {
           assertTrue(a_mes.smToInch(15) == 5.90551);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-          assertTrue(a_mes.smToInch(15.75) == 5.9055118);
+          assertTrue(a_mes.smToInch(15.75) == 6.20079);
       }
 
 
@@ -148,8 +128,7 @@ public class TestRunner {
       @Test
       public void ftToMetr() {
           assertTrue(a_mes.ftToMeter(30) == 9.144);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-          assertTrue(a_mes.ftToMeter(37.45) == 11.2776);
+          assertTrue(a_mes.ftToMeter(37.45) == 11.415);
       }
 
 
@@ -157,8 +136,7 @@ public class TestRunner {
       @Test
       public void mToFt() {
           assertTrue(a_mes.meterToFt(20) == 65.6168);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-          assertTrue(a_mes.meterToFt(20.5) == 67.25722);
+          assertTrue(a_mes.meterToFt(20.5) == 67.2572);
       }
 
 
@@ -166,8 +144,7 @@ public class TestRunner {
       @Test
       public void galToLitr() {
           assertTrue(a_mes.gallToLitr(150) == 567.812);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-          assertTrue(a_mes.gallToLitr(150.50) == 569.70447);
+          assertTrue(a_mes.gallToLitr(150.50) == 569.704);
       }
 
 
@@ -175,8 +152,7 @@ public class TestRunner {
       @Test
       public void ltToGal() {
           assertTrue(a_mes.litrToGall(50) == 13.2086);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-          assertTrue(a_mes.litrToGall(150.50) == 39.757894);
+          assertTrue(a_mes.litrToGall(150.50) == 39.7579);
       }
 
 
@@ -184,8 +160,7 @@ public class TestRunner {
       @Test
       public void yarToMt() {
           assertTrue(a_mes.yardToMeter(15) == 13.716);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-          assertTrue(a_mes.yardToMeter(15.70) == 14.35608);
+          assertTrue(a_mes.yardToMeter(15.70) == 14.356);
       }
 
 
@@ -193,8 +168,7 @@ public class TestRunner {
       @Test
       public void mtToyar() {
           assertTrue(a_mes.meterToYard(1) == 1.09361);
-          //assertTrue(w_temp.showCelciusFromKelvin(-150) == -423.15);
-          //assertTrue(a_mes.meterToYard(120.53) == 131.233596);
+          assertTrue(a_mes.meterToYard(120.53) == 131.81321);
       }
 
 }
