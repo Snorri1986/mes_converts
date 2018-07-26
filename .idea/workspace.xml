@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="159da456-c02d-4e15-be91-9bf332ab8e6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mes_conv/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mes_conv/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AmericanMesserments.java" afterPath="$PROJECT_DIR$/AmericanMesserments.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FormShower.java" afterPath="$PROJECT_DIR$/FormShower.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestRunner.java" afterPath="$PROJECT_DIR$/TestRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeatherTemp.java" afterPath="$PROJECT_DIR$/WeatherTemp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -773,7 +767,8 @@
     <MESSAGE value="1. Add new NumFormException class&#10;2. Set astronomy values not editable&#10;3. All textfields accept only number values&#10;Development stage is finished." />
     <MESSAGE value="1.Add new TestRunner class for automation testing&#10;2.Only wheater's values could accept minus values. For other - &#10;Math.abs(textfield.value)" />
     <MESSAGE value="Fixing bugs. Add new object DecimalFormat ##.# for big double results" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing bugs. Add new object DecimalFormat ##.# for big double results" />
+    <MESSAGE value="Bugfixing and floating point conversion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugfixing and floating point conversion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
