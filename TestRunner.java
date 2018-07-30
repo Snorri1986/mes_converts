@@ -80,8 +80,6 @@ public class TestRunner {
     @Test
     public void landMiletoKm() {
         assertTrue(a_mes.landMiletoKm(35) == 56.327);
-        //assertTrue(a_mes.landMiletoKm(50.5) == 31.3793); // show write result but test wasn't passed
-
     }
 
 

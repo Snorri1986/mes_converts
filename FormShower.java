@@ -13,9 +13,6 @@ public class FormShower {
         AmericanMesserments amer_mess = am;
         WeatherTemp weather = wt;
 
-        // Format pattern for decimal values
-        //DecimalFormat df = new DecimalFormat("##.#");
-
         //JFrame
         JFrame fr = new JFrame(title);
         fr.setBounds(100, 100, 450, 300);
@@ -45,24 +42,11 @@ public class FormShower {
         sl_celc_to_far.putConstraint(SpringLayout.SOUTH, btnCalc_cf, -10, SpringLayout.SOUTH, fr.getContentPane());
         fr.getContentPane().add(btnCalc_cf);
 
-        // 02.07.2018
+
         btnCalc_cf.addActionListener(new ActionListener() {
             @Override
-            // 04.07.2018
-            public void actionPerformed(ActionEvent e) {
-                /*double res = 0.0;
-                Object wt = new mes();
-                JFrame res_window = new JFrame("Celsius_to_Fahrenheit");
-                res_window.setLocationRelativeTo(null);
-                res = wt.showFaringeith(Integer.parseInt(tf_celc_to_far.getText().trim()));
-                String lab_res = String.valueOf(res) + " F"; // convert double to string
-                JLabel res_test = new JLabel(lab_res);
-                res_window.add(res_test);
-                res_window.pack();
-                res_window.setVisible(true);
-                tf_celc_to_far.setText(" ");*/
-                //System.out.println("HelloWorld");
 
+            public void actionPerformed(ActionEvent e) {
                 //shared values
                 String lab_res;
                 JLabel res_test;
@@ -89,7 +73,7 @@ public class FormShower {
                         case "Kilometer->LandMile" :
                             try {
                                 res = am.kmToLandMile(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " miles"; // convert double to string
+                                lab_res = String.valueOf(res) + " miles";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -103,7 +87,7 @@ public class FormShower {
                         case "SeaMile->Kilometer" :
                             try {
                                 res = am.seaMilestoKm(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " km"; // convert double to string
+                                lab_res = String.valueOf(res) + " km";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -117,7 +101,7 @@ public class FormShower {
                         case "Kilometer->SeaMile" :
                             try {
                                 res = am.kmToSeaMiles(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " miles"; // convert double to string
+                                lab_res = String.valueOf(res) + " miles";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -131,7 +115,7 @@ public class FormShower {
                         case "Inch->Santimeter" :
                             try {
                                 res = am.inchToSm(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " sm"; // convert double to string
+                                lab_res = String.valueOf(res) + " sm";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -145,7 +129,7 @@ public class FormShower {
                         case "Santimeter->Inch" :
                             try {
                                 res = am.smToInch(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " inch"; // convert double to string
+                                lab_res = String.valueOf(res) + " inch";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -159,7 +143,7 @@ public class FormShower {
                         case "Fut->Meter" :
                             try {
                                 res = am.ftToMeter(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " meters"; // convert double to string
+                                lab_res = String.valueOf(res) + " meters";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -173,7 +157,7 @@ public class FormShower {
                         case "Meter->Fut" :
                             try {
                                 res = am.meterToFt(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " futs"; // convert double to string
+                                lab_res = String.valueOf(res) + " futs";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -187,7 +171,7 @@ public class FormShower {
                         case "Gallon->Litr" :
                             try {
                                 res = am.gallToLitr(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " litrs"; // convert double to string
+                                lab_res = String.valueOf(res) + " litrs";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -201,7 +185,7 @@ public class FormShower {
                         case "Litr->Gallon" :
                             try {
                                 res = am.litrToGall(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " gallons"; // convert double to string
+                                lab_res = String.valueOf(res) + " gallons";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -215,7 +199,7 @@ public class FormShower {
                         case "Yard->Meter" :
                             try {
                                 res = am.yardToMeter(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " meters"; // convert double to string
+                                lab_res = String.valueOf(res) + " meters";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -229,7 +213,7 @@ public class FormShower {
                         case "Meter->Yard" :
                             try {
                                 res = am.meterToYard(Math.abs(Double.parseDouble(tf.getText().trim())));
-                                lab_res = String.valueOf(res) + " yards"; // convert double to string
+                                lab_res = String.valueOf(res) + " yards";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -264,10 +248,8 @@ public class FormShower {
 
                         case "Fahr<->Celc" :
                             try {
-                                //DecimalFormat sC = new DecimalFormat("##.#");
                                 res = wt.showCelcius(Double.parseDouble(tf.getText().trim()));
-                                lab_res = String.valueOf(res) + " C"; // convert double to string
-                                //lab_res = String.valueOf(sC.format(res)).replace(",",".") + " C"; // test
+                                lab_res = String.valueOf(res) + " C";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -281,7 +263,7 @@ public class FormShower {
                         case "Kelv<->Celc" :
                             try {
                                 res = wt.showCelciusFromKelvin(Double.parseDouble(tf.getText().trim()));
-                                lab_res = String.valueOf(res) + " C"; // convert double to string
+                                lab_res = String.valueOf(res) + " C";
                                 res_test = new JLabel(lab_res);
                                 res_window.add(res_test);
                                 res_window.pack();
@@ -295,25 +277,20 @@ public class FormShower {
 
                 }
             }
-            //
         });
 
 
 
         JButton btnCancel_kc = new JButton("Clear");
         sl_celc_to_far.putConstraint(SpringLayout.NORTH, btnCancel_kc, 0, SpringLayout.NORTH, btnCalc_cf);
-        //sl_kelv_to_celc.putConstraint(SpringLayout.WEST, btnCancel_kc, 0, SpringLayout.WEST);
         fr.getContentPane().add(btnCancel_kc);
 
-        // 02.07.2018
         btnCancel_kc.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 tf.setText(" ");
             }
         });
-        //
-
 
     }
 }

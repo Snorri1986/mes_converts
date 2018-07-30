@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="mes_converts:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="159da456-c02d-4e15-be91-9bf332ab8e6a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/mes_converts_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mes_conv/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mes_conv/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/AmericanMesserments.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/AmericanMesserments.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$1.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$10.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$11.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$12.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$13.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$14.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$15.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$16.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$17.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$18.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$19.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$2.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$3.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$4.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$5.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$6.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$7.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$8.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor$9.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/Convertor.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/Convertor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/FormShower$1.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/FormShower$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/FormShower$2.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/FormShower$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/FormShower.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/FormShower.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/WeatherTemp.class" afterPath="$PROJECT_DIR$/out/production/mes_converts/WeatherTemp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Convertor.java" afterPath="$PROJECT_DIR$/Convertor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FormShower.java" afterPath="$PROJECT_DIR$/FormShower.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestRunner.java" afterPath="$PROJECT_DIR$/TestRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeatherTemp.java" afterPath="$PROJECT_DIR$/WeatherTemp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mes_converts/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/mes_converts/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,24 +57,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Convertor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Convertor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Convertor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="2924">
+              <caret line="172" column="8" lean-forward="false" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="-1029">
+              <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#2124#2125#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,8 +86,8 @@
       <file leaf-file-name="WeatherTemp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeatherTemp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="425">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,8 +96,8 @@
       <file leaf-file-name="FormShower.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FormShower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4114">
-              <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+            <state relative-caret-position="4964">
+              <caret line="294" column="4" lean-forward="false" selection-start-line="294" selection-start-column="4" selection-end-line="294" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,18 +130,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#2323#2324#0" expanded="false" />
-                <element signature="e#2379#2380#0" expanded="false" />
-                <element signature="e#4546#4547#0" expanded="false" />
-                <element signature="e#4603#4604#0" expanded="false" />
-                <element signature="e#6750#6751#0" expanded="false" />
-                <element signature="e#6807#6808#0" expanded="false" />
-                <element signature="e#8869#8870#0" expanded="false" />
-                <element signature="e#8924#8925#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,13 +159,13 @@
         <option value="$PROJECT_DIR$/val.form" />
         <option value="$PROJECT_DIR$/val_inp.form" />
         <option value="$PROJECT_DIR$/Forms.java" />
-        <option value="$PROJECT_DIR$/Convertor.java" />
         <option value="$PROJECT_DIR$/NumFormException.java" />
         <option value="$PROJECT_DIR$/AstronomyMesserments.java" />
-        <option value="$PROJECT_DIR$/FormShower.java" />
-        <option value="$PROJECT_DIR$/WeatherTemp.java" />
         <option value="$PROJECT_DIR$/AmericanMesserments.java" />
+        <option value="$PROJECT_DIR$/Convertor.java" />
         <option value="$PROJECT_DIR$/TestRunner.java" />
+        <option value="$PROJECT_DIR$/WeatherTemp.java" />
+        <option value="$PROJECT_DIR$/FormShower.java" />
       </list>
     </option>
   </component>
@@ -160,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -174,15 +207,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Convertor">
     <configuration default="false" name="TestRunner.landMiletoKm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -651,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532554658766</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Bugfixing and floating point conversion">
+      <created>1532639876190</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1532639876190</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -688,7 +726,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -699,13 +737,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.506135" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.49386504" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.49386504" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -803,18 +841,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2323#2324#0" expanded="false" />
-            <element signature="e#2379#2380#0" expanded="false" />
-            <element signature="e#4546#4547#0" expanded="false" />
-            <element signature="e#4603#4604#0" expanded="false" />
-            <element signature="e#6750#6751#0" expanded="false" />
-            <element signature="e#6807#6808#0" expanded="false" />
-            <element signature="e#8869#8870#0" expanded="false" />
-            <element signature="e#8924#8925#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +849,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4386">
           <caret line="273" column="4" lean-forward="false" selection-start-line="273" selection-start-column="4" selection-end-line="273" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -856,18 +885,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2323#2324#0" expanded="false" />
-            <element signature="e#2379#2380#0" expanded="false" />
-            <element signature="e#4546#4547#0" expanded="false" />
-            <element signature="e#4603#4604#0" expanded="false" />
-            <element signature="e#6750#6751#0" expanded="false" />
-            <element signature="e#6807#6808#0" expanded="false" />
-            <element signature="e#8869#8870#0" expanded="false" />
-            <element signature="e#8924#8925#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -875,7 +893,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
           <caret line="145" column="55" lean-forward="false" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -910,7 +930,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="98" column="43" lean-forward="false" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,7 +957,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
           <caret line="98" column="43" lean-forward="false" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -960,7 +984,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +1003,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="65" lean-forward="false" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -994,7 +1022,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,7 +1041,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,33 +1089,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1029">
+          <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2323#2324#0" expanded="false" />
-            <element signature="e#2379#2380#0" expanded="false" />
-            <element signature="e#4546#4547#0" expanded="false" />
-            <element signature="e#4603#4604#0" expanded="false" />
-            <element signature="e#6750#6751#0" expanded="false" />
-            <element signature="e#6807#6808#0" expanded="false" />
-            <element signature="e#8869#8870#0" expanded="false" />
-            <element signature="e#8924#8925#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2124#2125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeatherTemp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        <state relative-caret-position="425">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FormShower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4114">
-          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        <state relative-caret-position="4964">
+          <caret line="294" column="4" lean-forward="false" selection-start-line="294" selection-start-column="4" selection-end-line="294" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1108,18 +1141,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Convertor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="2924">
+          <caret line="172" column="8" lean-forward="false" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="8" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1131,10 +1155,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>mes_converts:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

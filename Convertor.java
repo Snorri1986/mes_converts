@@ -3,30 +3,23 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
-import javax.swing.JLabel;
 
-
-
-// test commit
 public class Convertor {
     public static void main(String[] args) {
         int grade;
         char grade_system;
+
         // JFrame preferences
         JFrame frame = new JFrame("Converter");
         frame.setVisible(true);
         frame.setSize(600, 500); // optimal size
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 27.03.2017
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);  // always on the center of screen
         frame.setResizable(false);
         frame.setBackground(Color.WHITE);
-
-        // Add JLabel
-        // JLabel temp_leb = new JLabel("Temperature convertion");
 
 
         // Add JPanel
@@ -36,16 +29,17 @@ public class Convertor {
 
         // Buttons
         JButton cf = new JButton();
-        cf.setPreferredSize(new Dimension(170,50)); // 02.07.2018
+        cf.setPreferredSize(new Dimension(170,50));
         cf.setText("Celcius->Fahrenheit");
         JButton fc = new JButton();
-        fc.setPreferredSize(new Dimension(170,50)); // 02.07.2018
+        fc.setPreferredSize(new Dimension(170,50));
         fc.setText("Fahrenheit->Celcius");
         JButton kc = new JButton();
-        kc.setPreferredSize(new Dimension(170,50)); // 02.07.2018
-        kc.setText("Kelvine->Celcius");          // Kelvine to Celcius
+        kc.setPreferredSize(new Dimension(170,50));
+        kc.setText("Kelvine->Celcius");
 
         // new button for AmericanMesserments
+
         //land_mile->km
         JButton lm_km = new JButton();
         lm_km.setPreferredSize(new Dimension(170,50));
@@ -152,34 +146,29 @@ public class Convertor {
         // Button listeners
         cf.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                /*Forms.celc_to_far();*/
                 FormShower.showForm("Celc<->Fahr","C->F",new WeatherTemp(),null);
             }
         } );
 
         fc.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                /*Forms.far_to_celc();*/
                 FormShower.showForm("Fahr<->Celc","F->C",new WeatherTemp(),null);
             }
         } );
 
         kc.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                /*Forms.kelv_to_celc();*/
                 FormShower.showForm("Kelv<->Celc","K->C",new WeatherTemp(),null);
             }
         } );
 
         // Add new listeners for AmericanMessurments buttons
 
-        // test code
         lm_km.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 FormShower.showForm("LandMile->Kilometer","LandMile->KM",null,new AmericanMesserments());
             }
         } );
-
 
         km_lm.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
