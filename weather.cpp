@@ -23,21 +23,21 @@ public:
 	double showCelciusFromKelvin(double);
 };
 
-//in celcius system
+//in celcius system with signed
 double cpp_weather_temp::showCelcius(double grad_val)
 {
 	celcius = (grad_val - conv_val) * dim_val_f_to_c; // temporary without round
 	return celcius;
 }
 
-// in Faringeuth system
+// in Faringeuth system with signed
 double cpp_weather_temp::showFaringeith(double grad_val)
 {
 	faringeith = grad_val*dim_val_c_to_f + conv_val; // temporary without round
 	return faringeith;
 }
 
-// Kelvin to Celcius
+// Kelvin to Celcius with signed
 double cpp_weather_temp::showCelciusFromKelvin(double grad_val) {
 	const double final_zero = -273.15;
 	if (grad_val == 0) return final_zero;
